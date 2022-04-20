@@ -6,26 +6,26 @@
 
 <?php echo $this->tag->form("admin/log/register"); ?>
 
-   
-
-    <p>
-        <label for="email">E-Mail</label>
-        <?php echo $this->tag->textField("email"); ?>
-    </p>
-    <p>
-        <label for="password">password</label>
-        <?php echo $this->tag->textField("password"); ?>
-    </p>
-
-    <p>
-        <?php echo $this->tag->submitButton("login"); ?>
-    </p>
-    <?php
-// if($error){
-//     echo $error;
-// }
 
 
+<p>
+    <label for="email">E-Mail</label>
+    <?php echo $this->tag->textField("email"); ?>
+</p>
+<p>
+    <label for="password">password</label>
+    <?php echo $this->tag->textField("password"); ?>
+</p>
+
+<p>
+    <?php echo $this->tag->submitButton("login"); ?>
+</p>
+<?php
+echo '<h2>Hello Sign up Here<h2>';
+echo $this->tag->linkTo(
+    '/user/signup',
+    'SignUp'
+);
 ?>
 
 </form>
